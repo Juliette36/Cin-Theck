@@ -1,0 +1,33 @@
+.footer {
+    background-image: url("../img/footer.png");
+    color: #fff3fc;
+    font-size: 13px;
+    background-attachment: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer img {
+    width: 100%;
+    margin: 0 12px;
+    max-width: 350px;
+}
+
+.footerflex  {
+    display: grid;
+    gap: 8px;
+}
+
+.footersectend {
+    padding: 16px 12px 4px;
+}
+
+@media (min-width:769px) {
+    .footerflex {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        padding: 0 32px;
+    }
+}

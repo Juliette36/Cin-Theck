@@ -1,0 +1,301 @@
+HTML/CSS RESET
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Roboto', sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* -------------- DEBUT -------------- */
+.btncyan {
+    color: #fff3fc;
+    background-color: #5de1e697;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bolder;
+    padding: 7px 20px;
+    text-align: center;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.identif{
+    position: fixed;
+}
+
+.sect1{
+    padding-top: 50px;
+}
+
+section{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre{
+    color: #fff3fc;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.titre2{
+    color: #fff3fc;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+strong{
+    color: #b51b19;
+    text-decoration: #b51b19;
+}
+
+.textcyan{
+    color: #5de1e6;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.textblanc{
+    color: #fff3fc;
+    font-size: 16px;
+    padding: 7px;
+    width: 316px;
+}
+
+input {
+    border-radius: 10px !important;
+    width: 350px;
+    margin: 7px 0 0 0;
+    background-color: #fff3fc !important;    
+    margin-top: 8px !important;
+}
+
+.btnaubergine{
+    border-radius: 10px;
+    background-color: #65004a;
+    color: #fff3fc;
+    font-size: 16px;
+    width: 350px;
+    height: 42px;
+}
+
+.imgaccueil{
+    width: 75px;
+}
+
+.pointsforts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.textblancpf {
+    color: #fff3fc;
+    font-size: 17px;
+    padding: 7px;
+    width: 230px;
+}
+
+main.with-parallax {
+    position: relative;
+    top: -50px;
+}
+
+@media screen and (min-width: 768px) {
+    main.with-parallax {
+        top: -150px;
+    }
+
+    .sect1 {
+        padding-top: 50px;
+    }
+    .titre {
+        color: #fff3fc;
+        font-size: 29px;
+        font-weight: bolder;
+    }
+    .textcyan {
+        color: #5de1e6;
+        font-size: 22px;
+        padding-top: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .textblanc {
+        color: #fff3fc;
+        font-size: 17px;
+        padding: 7px;
+        width: 450px;
+    }
+    .titre2 {
+        color: #fff3fc;
+        font-size: 19px;
+        font-weight: bolder;
+        padding: 0px 11px 0px 10px;
+    }
+    .pf{
+        width: 255px;
+    }
+    .textblancpf {
+        color: #fff3fc;
+        font-size: 17px;
+        padding: 7px;
+        width: 230px;
+    }
+
+    input {
+        border-radius: 10px !important;
+        width: 350px;
+        margin: 7px 0 0 0;
+        background-color: #fff3fc;
+    }
+  }
+
+ @media screen and (min-width: 1200px) {
+   
+    form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sect1 {
+        padding-top: 50px;
+    }
+
+    .titre {
+        font-size: 50px;
+    }
+
+    .imgacc{
+        margin: 90px 0px 90px 0px;
+    }
+    .btncyan {
+        font-size: 35px;
+        }
+
+    .textcyan {
+        font-size: 40px;
+    }
+        
+    .textblanc {
+        font-size: 30px;
+        width: 810px;
+    }
+
+    input {
+        width: 400px;
+        height: 60px;
+        }
+    ::placeholder{
+           font-size: 30px; 
+    }
+
+    .btnaubergine {
+        font-size: 30px;
+        width: 400px;
+        height: 60px;
+    }
+
+    .pf{
+        width: 450px;
+    }
+  }
