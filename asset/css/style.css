@@ -98,6 +98,12 @@ input, select {
 }
 
 /* -------------- DEBUT -------------- */
+
+main.with-parallax {
+    position: relative;
+    top: -50px;
+}
+
 .btncyan {
     color: #fff3fc;
     background-color: #5de1e697;
@@ -167,6 +173,11 @@ input {
     margin: 7px 0 0 0;
     background-color: #fff3fc !important;    
     margin-top: 8px !important;
+    font-size: 2rem !important;
+}
+
+input[type='text']::-webkit-input-placeholder{
+    vertical-align: middle;
 }
 
 .btnaubergine{
@@ -176,6 +187,7 @@ input {
     font-size: 16px;
     width: 350px;
     height: 42px;
+    margin: 10px;
 }
 
 .imgaccueil{
@@ -195,9 +207,64 @@ input {
     width: 230px;
 }
 
-main.with-parallax {
-    position: relative;
-    top: -50px;
+/* ******************CONNEXION****************** */
+
+.clic{
+    text-decoration: revert;
+}
+
+.clic:hover{
+    text-decoration: none;
+}
+/* ******************ESPACE PERSO****************** */
+
+.bienvenue {
+    color: #fff3fc;
+    font-size: 35px;
+    text-align: center;
+}
+
+.profil {
+    margin: auto;
+}
+
+.modif{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.modif input[type='text']::-webkit-input-placeholder{
+    font-size: 20px;
+    vertical-align: a;
+}
+
+.imgprofil{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.textblancfav {
+    color: #fff3fc;
+    font-size: 16px;
+    padding: 7px;
+}
+
+
+.titrefav{
+        display: flex;
+        flex-direction: row;
+        justify-content: revert;
+        margin: 20px 10px;
+        align-items: center;
+    }
+.favorisfilms{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-evenly;
 }
 
 @media screen and (min-width: 768px) {

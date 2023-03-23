@@ -64,7 +64,8 @@
             </ul>
         </div>
     </div>
-    <div>
+    <div class="logoprofil">
+        <a href="/CINETHECK/content/espaceperso.php"><img src="/CINETHECK/asset/img/profil48.png" alt="Compte"></a>
         <a href="/CINETHECK/content/connexion.php"><button class="btncyan">S'identifier</button></a>
     </div>
 </div>

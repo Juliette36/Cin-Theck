@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/CINETHECK/asset/css/footer.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/CINETHECK/asset/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/CINETHECK/asset/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,11 +41,14 @@
 
             <section class="sect1">
                 <div class="titre">Vos soirées comédies musicales en quelques clics</div>
-                <p class="textcyan">Entrez votre adresse mail pour utiliser CinéTheck
-                    <br>plus rapidement la prochaine fois</p>
+                <p class="textcyan">Entrez votre adresse mail pour utiliser votre
+                    <br> CinéTheck plus rapidement la prochaine fois</p>
                 <form action="" method="GET">
                     <input type="text" placeholder="Adresse e-mail">
-                    <a href="content/inscription.php"><button class="btnaubergine">Continuer</button></a>
+                    <br>
+                    <a href="content/inscription.php">
+                        <button class="btnaubergine">Continuer</button>
+                    </a>
                 </form>
                 <p class="textblanc">Profitez de 1 mois offert en vous inscrivant aujourd'hui !</p>
             </section>
@@ -89,9 +92,7 @@
                 </section>
             </section>
             <!-- ----------- FOOTER ----------- -->
-            <?php
- include("content/_footer.php");
-?>
+            <?php include("content/_footer.php");?>
 
         </div>
     </main>
