@@ -8,6 +8,8 @@
             <a href="#">A propos de CinéTheck</a>
             <br>
             <a href="#">Gérer vos préférences</a>
+            <br>
+            <a class="textcyan clic btncontact" href="/CINETHECK/content/contact.php">Nous contacter</a>
         </div>
         <div class="footersect">
             Conditions générales d'abonnement

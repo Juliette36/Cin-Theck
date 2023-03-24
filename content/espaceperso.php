@@ -88,7 +88,7 @@
                 </div>
             </section>
 
-            <a href="/CINETHECK/content/connexion.php"><button class="btncyan">Je suis administrateur/trice</button></a>
+            <a href="/CINETHECK/content/crud.php"><button class="btncyan">Je suis administrateur/trice</button></a>
 
             <div class="favoris">
                 <div class="titrefav">

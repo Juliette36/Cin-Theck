@@ -6,13 +6,8 @@
             class="inline-flex items-center justify-center px-4 py-2 text-sm sm:text-lg md:text-xl text-gray-500 rounded-full fixed cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
             <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                 id="flag-icon-css-it" viewBox="0 0 512 512">
-                <g fill-rule="evenodd" stroke-width="1pt">
-                    <path fill="#fff" d="M0 0h512v512H0z" />
-                    <path fill="#192f5d" d="M0 0h170.7v512H0z" />
-                    <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
-                </g>
             </svg>
-            Français
+            Langues
         </button>
         <!-- Dropdown -->
         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
@@ -65,7 +60,10 @@
         </div>
     </div>
     <div class="logoprofil">
-        <a href="/CINETHECK/content/espaceperso.php"><img src="/CINETHECK/asset/img/profil48.png" alt="Compte"></a>
-        <a href="/CINETHECK/content/connexion.php"><button class="btncyan">S'identifier</button></a>
+        <div><a class="bobine" href="/CINETHECK/content/produits.php"><img src="https://img.icons8.com/pastel-glyph/48/fff3fc/film-reel--v2.png"/></a>
+        </div>
+        <div><a class="profil"href="/CINETHECK/content/espaceperso.php"><img src="/CINETHECK/asset/img/profil48.png" alt="Compte"></a>
+        </div>
+        <div><a href="/CINETHECK/content/connexion.php"><button class="btncyan">S'identifier</button></a></div>
     </div>
 </div>

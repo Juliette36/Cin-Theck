@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    gap: 10px;
 }
 
 .parallax-effect {
@@ -26,7 +26,6 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     min-height: 300px;
-    
 }
 
 .btncyan:hover {
@@ -35,7 +34,7 @@ body {
 
 .logonavbar,
 #logonavbar{
-    width: 35%;
+    width: 50%;
     margin: auto;
 }
 

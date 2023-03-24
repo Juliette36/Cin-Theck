@@ -9,7 +9,7 @@
 }
 
 .footer img {
-    width: 100%;
+    width: 285px;
     margin: 0 12px;
     max-width: 350px;
 }
@@ -21,6 +21,9 @@
 
 .footersectend {
     padding: 16px 12px 4px;
+}
+.btncontact{
+    font-size: 15px;
 }
 
 @media (min-width:769px) {
