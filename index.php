@@ -1,3 +1,6 @@
+<?php  
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +25,7 @@
 </head>
 
 <body>
-
+    <?php include("traitement.php");?>
     <!-- ----------- NAVBAR ----------- -->
     <?php include('content/_navbar.php') ?>
 
@@ -43,13 +46,36 @@
                 <div class="titre">Vos soirées comédies musicales en quelques clics</div>
                 <p class="textcyan">Entrez votre adresse mail pour utiliser votre
                     <br> CinéTheck plus rapidement la prochaine fois</p>
-                <form action="" method="GET">
-                    <input type="text" placeholder="Adresse e-mail">
+                <form action="./traitementindex.php" method="POST">
+
+                    <input type="text" name="email" placeholder="Adresse e-mail">
                     <br>
-                    <a href="content/inscription.php">
-                        <button class="btnaubergine">Continuer</button>
-                    </a>
+                    <button class="btnaubergine"  type="submit">Continuer</button>
+
+                 
+                    <?php 
+                        if(isset($_SESSION['Email non conforme'])) {
+                    ?>
+                    <div class=textcyan>
+                        <?php 
+                            echo $_SESSION['Email non conforme'];
+                        ?>
+                    </div>
+                    <?php }
+                    ?>
+
+                    <?php 
+                        if(isset($_SESSION['Message email'])) {
+                    ?>
+                    <div class=textcyan>
+                        <?php 
+                            echo $_SESSION['Message email'];
+                        ?>
+                    </div>
+                    <?php }
+                    ?>
                 </form>
+                
                 <p class="textblanc">Profitez de 1 mois offert en vous inscrivant aujourd'hui !</p>
             </section>
 
@@ -93,13 +119,10 @@
             </section>
             <!-- ----------- FOOTER ----------- -->
             <?php include("content/_footer.php");?>
-
         </div>
     </main>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <script src="/asset/js/test.js"></script>
-
 </body>
-
+<?php session_destroy(); ?>
 </html>

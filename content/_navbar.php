@@ -64,6 +64,23 @@
         </div>
         <div><a class="profil"href="/CINETHECK/content/espaceperso.php"><img src="/CINETHECK/asset/img/profil48.png" alt="Compte"></a>
         </div>
-        <div><a href="/CINETHECK/content/connexion.php"><button class="btncyan">S'identifier</button></a></div>
+        <div>
+         
+        <div class="user-widget">
+            <?php 
+                if( isset($_SESSION['id_user']) && $_SESSION['id_user'] !== null ) : 
+            ?>
+                <a class="btncyan" href="../deconnex.php">Se déconnecter</a>
+            <?php 
+                else : 
+            ?>
+                <a class="btncyan" href="/CINETHECK/traitementconnexion.php">Se connecter</a>
+            <?php 
+                endif;
+            ?>
+        </div>
+        
+         </div>
+        </div>
     </div>
 </div>

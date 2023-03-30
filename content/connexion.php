@@ -34,11 +34,12 @@
 <!-- ----------- CONNEXION ----------- -->
 <section class="sect1">
     <div class="titre">Identifiez-vous avec votre adresse e-mail</div>
-    <form action="" method="GET">
-        <input type="text" placeholder="Adresse e-mail">
-        <input type="text" placeholder="Mot de passe">
+    <form action="/cinetheck/traitementconnexion.php" method="POST">
+        <input name="email" type="text" placeholder="Adresse e-mail">
+        <input name="mdp" type="password" placeholder="Mot de passe">
         <br>
-        <a href="#" ><button class="btnaubergine">Connexion</button></a>
+        <button type="submit" name="submit" class="btnaubergine">Connexion</button>
+
     </form>
     <p class="textcyan">Vous êtes nouveau sur notre CinéTheck?</p>
     <a class="textcyan clic" href="/CINETHECK/content/inscription.php">Inscrivez-vous</a>

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,6 +38,11 @@
             style="background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000); font-size:36px; text-align: center; font-family: 'Raleway', Arial, sans-serif">
 
             <!-- ----------- LISTE FILMS ----------- -->
+        <div class="bienvenue">Bienvenue 
+            <?php 
+                echo $_SESSION['pseudo_user'];
+            ?>
+        </div>
             <nav>
                 <ul>
                     <div class="flexmenu">

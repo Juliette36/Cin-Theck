@@ -1,3 +1,7 @@
+<?php  
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,14 +38,69 @@
 <!-- ----------- INSCRIPTION ----------- -->
 <section class="sect1">
     <div class="titre">Inscrivez-vous pour gagner du temps la prochaine fois</div>
-    <form action="" method="GET">
-        <input type="text" placeholder="Nom">
-        <input type="text" placeholder="Prénom">
-        <input type="text" placeholder="Âge">
-        <input type="text" placeholder="Pseudo">
-        <input type="text" placeholder="Adresse e-mail">
-        <input type="text" placeholder="Mot de passe">
-        <a href="#" ><button class="btnaubergine">Inscription</button></a>
+    <form action="../traitementinscription.php" method="POST">
+        <input type="text" name="nom" placeholder="Nom">
+        <input type="text" name="prenom" placeholder="Prénom">
+        <input type="text" name="ages" placeholder="Âge">
+        <input type="text" name="pseudo" placeholder="Pseudo">
+        <input type="email" name="email" placeholder="Adresse e-mail">
+        <input type="password" name="mdp" placeholder="Mot de passe">
+        <button class="btnaubergine" type="submit">Valider</button>
+
+        <?php 
+            if(isset( $_SESSION['nomvide'])) {
+        ?>
+        <div class=textblanc>
+            <?php 
+                echo  $_SESSION['nomvide'];
+            ?>
+        </div>
+        <?php }
+        ?>
+
+        <?php
+            if(isset( $_SESSION['prenomvide'])) {
+        ?>
+        <div class=textblanc>
+            <?php 
+                echo  $_SESSION['prenomvide'];
+            ?>
+        </div>
+        <?php }
+        ?>    
+
+        <?php
+            if(isset( $_SESSION['emailinvalide'])) {
+        ?>
+        <div class=textblanc>
+            <?php 
+                echo  $_SESSION['emailinvalide'];
+            ?>
+        </div>
+        <?php }
+        ?>      
+
+        <?php
+            if(isset( $_SESSION['emailexiste'])) {
+        ?>
+        <div class=textblanc>
+            <?php 
+                echo  $_SESSION['emailexiste'];
+            ?>
+        </div>
+        <?php }
+        ?>  
+
+        <?php
+            if(isset( $_SESSION['mdp vide'])) {
+        ?>
+        <div class=textblanc>
+            <?php 
+                echo  $_SESSION['mdp vide'];
+            ?>
+        </div>
+        <?php }
+        ?>  
     </form>
 </section>
 

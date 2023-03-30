@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +33,12 @@
     <main class="with-parallax">
         <a href="/CINETHECK/index.php"><img src="/CINETHECK/asset/img/logo.png" class="logonavbar"
                 alt="CinéTheck Logo" /></a>
-        <div class="bienvenue">Bienvenue Antoine</div>
+        <div class="bienvenue">Bienvenue
+            <?php 
+            echo $_SESSION['pseudo_user'];
+            ?>
+        </div>
+        <br>
         <img class="profil" src="../asset/img/profil96.png" alt="Photo">
         <div
             style="background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000); font-size:36px; text-align: center; font-family: 'Raleway', Arial, sans-serif">
@@ -41,23 +49,30 @@
             <section class="modif">
                 <div class="">
                     <div class="titre">E-mail</div>
-                    <div class="textblanc">test@live.fr</div>
-                </div>
-                <div>
-                    <form action="" method="GET">
-                        <input type="text" placeholder="Adresse e-mail">
-                    </form>
-                    <a class="textcyan clic" href="#">Modifier</a>
-                </div>
+                    <div class="textblanc">
+                        <?php 
+                            echo $_SESSION['email_user'];
+                        ?>
+                    </div>
+                    <div>
+                        <form action="" method="GET">
+                            <input type="text" placeholder="Adresse e-mail">
+                        </form>
+                        <a class="textcyan clic" href="#">Modifier</a>
+                    </div>
             </section>
             <section class="modif">
                 <div class="">
                     <div class="titre">Mot de passe</div>
-                    <div class="textblanc">*********</div>
+                    <div class="textblanc">
+                        <?php 
+                            echo $_SESSION['motdepasse_user'];
+                        ?>
+                    </div>
                 </div>
                 <div>
                     <form action="" method="GET">
-                        <input type="text" placeholder="Mot de passe">
+                        <input name="mdp" type="password" placeholder="Mot de passe">
                     </form>
                     <a class="textcyan clic" href="#">Modifier</a>
                 </div>
@@ -65,7 +80,11 @@
             <section class="modif">
                 <div class="">
                     <div class="titre">Pseudo</div>
-                    <div class="textblanc">test36</div>
+                    <div class="textblanc">
+                        <?php 
+                            echo $_SESSION['pseudo_user'];
+                        ?>
+                    </div>
                 </div>
                 <div>
                     <form action="" method="GET">
@@ -99,7 +118,7 @@
             <div class="favorisfilms">
                 <img src="/CINETHECK/asset/img/phantom.jpg" alt="">
                 <img src="/CINETHECK/asset/img/reefer.jpg" alt="">
-                <img src="/CINETHECK/asset/img/chantons.jpg" alt="">                
+                <img src="/CINETHECK/asset/img/chantons.jpg" alt="">
             </div>
             <!-- ----------- FOOTER ----------- -->
             <?php include("_footer.php");?>
