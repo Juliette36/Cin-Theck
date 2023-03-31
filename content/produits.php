@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include('../traitementproduits.php');
 ?>
 
 <!DOCTYPE html>
@@ -56,16 +57,13 @@
                             </li>
                         </div>
                         <div>
-                            <li class="deroulant"><a class="btncyan" href="#"> Années_De_Sortie &ensp;</a>
+                            <li class="deroulant"><a class="btncyan" href="#"> Classer &ensp;</a>
                                 <ul class="sous">
-                                    <li><a href="#">1950</a></li>
-                                    <li><a href="#">1990</a></li>
-                                    <li><a href="#">2000</a></li>
+                                    <li><a href="#">De_A_à_Z</a></li>
+                                    <li><a href="#">Du_récent_à_l'ancien</a></li>
+                                    <li><a href="#">De_l'ancien_au_récent</a></li>
                                 </ul>
                             </li>
-                        </div>
-                        <div>
-                            <li><a class="btncyan" href="#">De_A_à_Z</a></li>
                         </div>
                     </div>
                 </ul>
@@ -73,30 +71,20 @@
 
         </div>
         </div>
-
-        <div class="favorisfilms">
-            <img src="/CINETHECK/asset/img/phantom.jpg" alt="">
-            <img src="/CINETHECK/asset/img/reefer.jpg" alt="">
-            <img src="/CINETHECK/asset/img/chantons.jpg" alt="">
+        <div class="textblanc favorisfilms">
+        <ul>
+            <?php 
+                foreach($filmsAll as $film){  
+            ?>
+                <li>   
+                <img src="/CINETHECK/asset/img/unpload/<?=$film['img_affiche_film'];?>" "> <br> </img>
+                </li>
+            <?php 
+                } 
+            ?>
+        </ul>
         </div>
-        <br>
-        <div class="favorisfilms">
-            <img src="/CINETHECK/asset/img/phantom.jpg" alt="">
-            <img src="/CINETHECK/asset/img/reefer.jpg" alt="">
-            <img src="/CINETHECK/asset/img/chantons.jpg" alt="">
-        </div>
-        <br>
-        <div class="favorisfilms">
-            <img src="/CINETHECK/asset/img/phantom.jpg" alt="">
-            <img src="/CINETHECK/asset/img/reefer.jpg" alt="">
-            <img src="/CINETHECK/asset/img/chantons.jpg" alt="">
-        </div>
-        <br>
-        <div class="favorisfilms">
-            <img src="/CINETHECK/asset/img/phantom.jpg" alt="">
-            <img src="/CINETHECK/asset/img/reefer.jpg" alt="">
-            <img src="/CINETHECK/asset/img/chantons.jpg" alt="">
-        </div>
+            
         <!-- ----------- FOOTER ----------- -->
         <?php include("_footer.php");?>
 

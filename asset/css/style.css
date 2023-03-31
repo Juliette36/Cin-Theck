@@ -109,6 +109,7 @@ main.with-parallax {
     background-color: #5de1e697;
     border-radius: 100px;
     cursor: pointer;
+    width: 200px;
     display: inline-block;
     font-weight: bolder;
     padding: 7px 20px;
@@ -263,7 +264,7 @@ input[type='text']::-webkit-input-placeholder{
 
 .favorisfilms{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
     justify-content: space-evenly;
     align-items: center;
@@ -427,7 +428,7 @@ nav > ul li:hover .sous{
         color: #fff3fc;
         font-size: 17px;
         padding: 7px;
-        width: 450px;
+        width: auto;
     }
     .titre2 {
         color: #fff3fc;
@@ -452,16 +453,18 @@ nav > ul li:hover .sous{
         background-color: #fff3fc;
     }
 
-    .favorisfilms{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: auto;
+    .favorisfilms ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);      
         justify-content: space-evenly;
         align-items: center;
-        gap: 50px;
     }
+    .favorisfilms ul li{
+        width: 250px;
   }
+}
 
  @media screen and (min-width: 1200px) {
    
@@ -485,8 +488,9 @@ nav > ul li:hover .sous{
     .imgacc{
         margin: 90px 0px 90px 0px;
     }
-    .btncyan {
-        font-size: 35px;
+    .btncyan{
+        font-size: 20px;
+        width: 290px;
         }
 
     .textcyan {
@@ -495,7 +499,7 @@ nav > ul li:hover .sous{
         
     .textblanc {
         font-size: 30px;
-        width: 810px;
+        width: auto;
     }
 
     input {
@@ -516,12 +520,15 @@ nav > ul li:hover .sous{
         width: 450px;
     }
 
-    .favorisfilms{
-        display: flex;
-        flex-direction: row;
-        width: auto;
+    .favorisfilms ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);      
         justify-content: space-evenly;
         align-items: center;
-        gap: 50px;
     }
+    .favorisfilms ul li{
+        width: 300px;
+  }
   }

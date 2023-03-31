@@ -62,15 +62,27 @@
     <div class="logoprofil">
         <div><a class="bobine" href="/CINETHECK/content/produits.php"><img src="https://img.icons8.com/pastel-glyph/48/fff3fc/film-reel--v2.png"/></a>
         </div>
-        <div><a class="profil"href="/CINETHECK/content/espaceperso.php"><img src="/CINETHECK/asset/img/profil48.png" alt="Compte"></a>
-        </div>
         <div>
          
         <div class="user-widget">
             <?php 
                 if( isset($_SESSION['id_user']) && $_SESSION['id_user'] !== null ) : 
             ?>
-                <a class="btncyan" href="../deconnex.php">Se déconnecter</a>
+            <nav>
+                <ul>
+                    <div class="flexmenu">
+                        <div>
+                            <li class="deroulant"><a class="btncyan" href="#">Mon compte &ensp;</a>
+                                <ul class="sous">
+                                    <li><a href="/CINETHECK/content/espaceperso.php">Compte</a></li>
+                                    <li><a href="#">Administrateur</a></li>
+                                    <li><a href="/CINETHECK/deconnex.php">Déconnexion</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
             <?php 
                 else : 
             ?>
