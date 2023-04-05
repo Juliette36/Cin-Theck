@@ -404,6 +404,42 @@ nav > ul li:hover .sous{
     padding: 0px 20px;
 }
 
+.textblanccrud {
+    color: #fff3fc;
+    font-size: 10px;
+}
+.favorisfilms ul{
+    width: 50px;
+}
+
+.input {
+    font-size: 14px !important;
+}
+
+.url{
+    font-size: 3px;
+}
+
+.btncyancrud {
+    color: #fff3fc;
+    background-color: #5de1e697;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 150px;
+    display: inline-block;
+    font-weight: bolder;
+    padding: 7px 20px;
+    text-align: center;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+td{
+    border: solid #b51b19;
+}
+
 @media screen and (min-width: 768px) {
     main.with-parallax {
         top: -150px;
@@ -446,6 +482,12 @@ nav > ul li:hover .sous{
         width: 230px;
     }
 
+/* ******************CRUD****************** */
+
+.textblanccrud {
+        font-size: 16px !important;
+    }
+
     input {
         border-radius: 10px !important;
         width: 350px;
@@ -464,7 +506,7 @@ nav > ul li:hover .sous{
     .favorisfilms ul li{
         width: 250px;
   }
-}
+} 
 
  @media screen and (min-width: 1200px) {
    
@@ -500,6 +542,10 @@ nav > ul li:hover .sous{
     .textblanc {
         font-size: 30px;
         width: auto;
+    }
+
+    .textblanccrud {
+        font-size: 16px !important;
     }
 
     input {

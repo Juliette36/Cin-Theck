@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include('../traitementcrud.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,19 +39,51 @@
             style="background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000); font-size:36px; text-align: center; font-family: 'Raleway', Arial, sans-serif">
 
             <!-- ----------- CONNEXION ----------- -->
-            <section class="formulaire">
-                <div class="titre">Un probléme? Une question? Une suggestion de vos
-                    <br>
-                    comédies préféres? Ecrivez-nous !
-                </div>
-                <form class="formcontent" action="" method="GET">
-                    <div><input type="text" placeholder="Adresse e-mail"></div>
-                    <div><textarea class="textarea" name="" id="" cols="30" rows="10"></textarea></div>
-                    <div><a href="#"><button class="btnaubergine">Envoyer</button></a></div>
-                </form>
-                <p class="textcyan">Merci pour votre participation à rendre
-                    <br> notre CinéTheck toujours plus compléte</p>
-            </section>
+
+            <h1 class="textblanc">Tout nos films</h1>
+            <div style="overflow: auto;">
+                <table class="textblanccrud">
+                    <thead>
+                        <tr>
+                            <th class="intcrud">Nom</th>
+                            <th class="intcrud">Date</th>
+                            <th class="intcrud">Synopsis</th>
+                            <th class="intcrud">Affiche</th>
+                            <th class="intcrud">Bande annonce</th>
+                            <th class="intcrud">Durée</th>
+                            <th class="intcrud">Note</th>
+                            <th class="intcrud">Pays</th>
+                            <th class="intcrud">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <?php
+            foreach($result as $produit){
+        ?>
+                        <tr class="textblanccrud">
+                            <td> <?= $produit['nom_film'] ?></td>
+                            <td> <?= $produit['date_film'] ?></td>
+                            <td> <?= $produit['synopsis_film'] ?></td>
+                            <td> <?= $produit['img_affiche_film'] ?></td>
+                            <td class="url"><?= $produit['url_ba_film'] ?></td>
+                            <td> <?= $produit['duree_film'] ?></td>
+                            <td> <?= $produit['note_film'] ?></td>
+                            <td> <?= $produit['id_pays'] ?></td>
+                            <td>
+                                <a class="btncyancrud" href="../edits.php?id= <?= $produit['id_film'] ?>">Modifier</a> 
+                                <a class="btncyancrud" href="../delete.php?id= <?= $produit['id_film'] ?>">Supprimer</a>
+                            </td>
+                        </tr>
+                        <?php
+            }
+        ?>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ----------- AJOUTER UN FILM ----------- -->
+            <a class="btncyan" href="../add.php?id= <?= $produit['id_film'] ?>">Ajouter</a> 
             <!-- ----------- FOOTER ----------- -->
             <?php include("_footer.php");?>
 

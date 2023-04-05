@@ -1,4 +1,5 @@
-<!-- //ONLINE
+<?php
+//<!-- //ONLINE
 
 // $host = 'access830092383.webspace-data.io'; 
 //  $db   = 'cinetheck';
@@ -6,8 +7,6 @@
 // $pass = '8B8ftg2C';
 // $port = "3306";
 // $charset = 'utf8mb4'; -->
-
-<?php
 try {
         $host = "localhost";
         $username = "root"; 

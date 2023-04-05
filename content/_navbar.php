@@ -75,7 +75,7 @@
                             <li class="deroulant"><a class="btncyan" href="#">Mon compte &ensp;</a>
                                 <ul class="sous">
                                     <li><a href="/CINETHECK/content/espaceperso.php">Compte</a></li>
-                                    <li><a href="#">Administrateur</a></li>
+                                    <li><?php if(isset($_SESSION['id_roleadmin'])){echo'<a href="/CINETHECK/content/crud.php">Administrateur</a>';}?></li>
                                     <li><a href="/CINETHECK/deconnex.php">Déconnexion</a></li>
                                 </ul>
                             </li>

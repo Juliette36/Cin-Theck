@@ -77,7 +77,7 @@
                 foreach($filmsAll as $film){  
             ?>
                 <li>   
-                <img src="/CINETHECK/asset/img/unpload/<?=$film['img_affiche_film'];?>" "> <br> </img>
+                <img src="/CINETHECK/asset/img/upload/<?=$film['img_affiche_film'];?>"> <br> </img>
                 </li>
             <?php 
                 } 
